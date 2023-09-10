@@ -3,13 +3,13 @@ from pathlib import Path
 
 class Config:
     
-    API_ID = int(os.environ.get('API_ID'))
-    API_HASH = os.environ.get('API_HASH')
-    BOT_TOKEN = os.environ.get('BOT_TOKEN')
-    SESSION_NAME = os.environ.get('SESSION_NAME')
-    LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL'))
-    DATABASE_URL = os.environ.get('DATABASE_URL')
-    AUTH_USERS = [int(i) for i in os.environ.get('AUTH_USERS', '').split(' ')]
+    API_ID = int("5310709")
+    API_HASH = "63a546bdaf18e2cbba99f87b4274fa05"
+    BOT_TOKEN = "5462641835:AAHBBA7u2XTcqP1uusarSxDAHhXCjH1Z940"
+    SESSION_NAME = "NFS BOT"
+    LOG_CHANNEL = int("-1001689617681")
+    DATABASE_URL = "mongodb+srv://nfs:nfs@cluster0.ose63hs.mongodb.net/?retryWrites=true&w=majority"
+    AUTH_USERS = int("1226270709")
     MAX_PROCESSES_PER_USER = int(os.environ.get('MAX_PROCESSES_PER_USER', 2))
     MAX_TRIM_DURATION = int(os.environ.get('MAX_TRIM_DURATION', 600))
     TRACK_CHANNEL = int(os.environ.get('TRACK_CHANNEL', False))
